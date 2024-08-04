@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <!-- Header section -->
+        <section id="header">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="#"><span>Yuvraj's </span>Portfolio</a>
+                </div>
+                <div class="nav-menu">
+                    <ul class="sidemenu">
+                        <li><a href="#">Home</a></li>
+                        <li class="about-info"><a href="#about">About</a>
+                            <div class="detailed">
+                                <div> <a href="#about">Info</a></div>
+                                <div> <a href="#details">Skills</a></div>
+                                <div> <a href="#details">Education</a></div>
+                                <div> <a href="#details">Experience</a></div>
+
+                            </div>
+                        </li>
+                        <li><a href="#service">Services</a></li>
+                        <li><a href="#portfolio">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+                </div>
+                <div class="bottom-right">
+                    <a href="https://www.linkedin.com/in/yuvrajsingh23/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/invtfl-yuvraj"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="bottom-left">
+                    <h1 class="name">Yuvraj <span>Singh</span></h1>
+                    <h3 class="profession"> Aspiring Computer Science Professional | <br> Web Developer | UI Designer </h3>
+                    <p class="short-desc">
+                        An ambitious and dedicated individual driven by a relentless pursuit of knowledge and excellence in the field of
+                        Computer Science. Skilled in web development technologies like HTML, CSS, JavaScript, and frameworks like React.
+                        Committed to delivering innovative and efficient solutions.
+                    </p>
+                    <a href="assets/Yuvraj Singh Resume Updated.pdf" class="btn-cv" target="_blank" download>Download Resume</a>
+                </div>
+                <div class="profile-pic">
+                    <img src="./assets/my_image.png" alt="">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section id="about">
+            <div class="about-left">
+                <img src="assets/my_profile_pic.jpg" alt="user-sideimg" />
+            </div>
+            <div class="about-right">
+                <div class="section-title">
+                    <h2 class="sub-title">About Me</h2>
+                    <h3 class="title">Web Developer</h3>
+                </div>
+                <p class="desc">
+                    I'm Yuvraj Singh, a Computer Science student at VIT Bhopal University with a 9.10 CGPA. Born in 2004, I'm passionate
+                    about programming, web development, and machine learning. I excel in C++ and Python, with growing expertise in Java and
+                    JavaScript. My projects range from a ML-based waste management solution to frontend applications using ReactJS and
+                    Tailwind CSS. I've solved over 250 DSA problems and completed certifications in various tech domains. Continuously
+                    learning and adapting, I aim to create innovative solutions that address real-world challenges. I'm always excited to
+                    collaborate and contribute to cutting-edge technologies in this dynamic field.
+                </p>
+
+            </div>
+
+
+        </section>
+
+        <!-- Skills -->
+
+        <section id="details">
+
+            <div id="skills-section">
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                    <p class="tab-links" onclick="openTab('education')">Education</p>
+                    <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li>
+                            <span>Web Development</span> <br />
+                            <div class="skill-cards">
+                                <div class="cards">
+                                    <img src="./assets/html-logo.png" alt="">
+                                    <p>HTML 5</p>
+                                </div>
+                                <div class="cards">
+                                    <img src="./assets/css3.png" alt="">
+                                    <p>CSS 3</p>
+                                </div>
+                                <div class="cards">
+                                    <img src="./assets/JavaScript.webp" alt="">
+                                    <p>JavaScript</p>
+                                </div>
+                                <div class="cards">
+                                    <img src="./assets/tailwind.png" alt="">
+                                    <p>TailWind CSS</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>Programming Languages</span> <br />
+                            <div class="skill-cards">
+                                <div class="cards">
+                                    <img src="./assets/c++.webp" alt="">
+                                    <p>C++</p>
+                                </div>
+                                <div class="cards">
+                                    <img src="./assets/Python.png" alt="">
+                                    <p>Python</p>
+                                </div>
+                                <div class="cards">
+                                    <img src="./assets/JavaScript.webp" alt="">
+                                    <p>JavaScript
+                                    </p>
+                                </div>
+                                <div class="cards">
+                                    <img src="./assets/java.jpeg" alt="">
+                                    <p>Java</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>Other Skills</span> <br />
+                            <div class="skill-cards">
+                                <div class="cards">
+                                    <img src="./assets/github-logo.png" alt="">
+                                    <p>Git Hub</p>
+                                </div>
+                                <div class="cards">
+                                    <img src="./assets/FIGMA.jpeg" alt="">
+                                    <p>Figma</p>
+                                </div>
+                                <div class="cards">
+                                    <img src="./assets/dsa.jpeg" alt="">
+                                    <p>DSA</p>
+                                </div>
+                                <div class="cards">
+                                    <img src="./assets/machine-learning.jpeg" alt="">
+                                    <p>Machine Learning</p>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li>
+                            <div class="edu-cards">
+                                <div class="cards">
+                                    <img src="./assets/graduation.webp" alt="">
+                                    <h3>Btech in Computer Science <br> (2022 - present : <span>9.10 CGPA</span>)</h3>
+                                    <h2>VIT BHOPAL UNIVERSITY</h2>
+                                    <p>Sehore, Madhya Pradesh, India</p>
+                                </div>
+                                <div class="cards">
+                                    <img src="./assets/12th.avif" alt="">
+                                    <h3>Intermediate <br> (2021 : <span>93.6%</span>)</h3>
+                                    <h2>ST. LAWRANCE PUBLIC SCHOOL</h2>
+                                    <p>Farrukhabad, Uttar Pradesh, India</p>
+                                </div>
+                                <div class="cards">
+                                    <img src="./assets/10th.webp" alt="">
+                                    <h3>High School <br> (2019: <span>94.6%</span>)</h3>
+                                    <h2>ST. LAWRANCE PUBLIC SCHOOL</h2>
+                                    <p>Farrukhabad, Uttar Pradesh, India</p>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+
+                    <div class="experience-cards">
+                        <h2>Will be Updated Soon...</h2>
+                    </div>
+                </div>
+            </div>
+        </section> 
+
+        <!-- services -->
+
+        <section id="service">
+            <div class="section-title">
+                <h2 class="sub-title">My Services</h2>
+                <h3 class="title">A brief of Offering Services</h3>
+            </div>
+
+            <div class="services">
+
+                <div>
+                    <i class="fas fa-laptop-code"></i>
+                    <h2>Web Development</h2>
+                    <p>
+                        Web development involves building and maintaining websites and web applications, ensuring functionality, usability,
+                        and optimal user experience across different devices and platforms.
+                    </p>
+                </div>
+
+                <div>
+                    <i class="fas fa-laptop"></i>
+                    <h2>UI Design</h2>
+                    <p>
+                        UI (User Interface) designing focuses on creating visually appealing and user-friendly interfaces for software and
+                        websites. It aims to enhance the user's experience through intuitive design elements.
+                    </p>
+                </div>
+
+                <div>
+                    <i class="fab fa-pix"></i>
+                    <h2>Graphics Design</h2>
+                    <p>
+                        Graphics design encompasses designing digital graphics, including illustrations, infographics, and digital artwork,
+                        to enhance visual communication and branding efforts.
+                    </p>
+                </div>
+
+                <!-- <div>
+                    <i class="fas fa-lock"></i>
+                    <h2>Cyber Security</h2>
+                    <p>
+                        Cyber security services include implementing measures to protect digital systems, networks, and data from cyber
+                        threats and ensuring the confidentiality, integrity, and availability of information.
+                    </p>
+                </div> -->
+            </div>
+        </section>
+
+        <!-- Portfolio section -->
+        <section id="portfolio">
+            <div class="section-title">
+                <h2 class="sub-title">My Projects</h2>
+                <!-- <h3 class="title">Awesome Works</h3> -->
+            </div>
+            <div class="project-list">
+                <div class="project">
+                    <img src="assets/weathersky.png" alt="project1" />
+                    <div class="layer">
+                        <h2>WEATHER SKY</h2>
+                        <p>
+                            A Web app offering personalized weather forecasts, real-time updates, and detailed weather information for your location.
+                        </p>
+                        <a href="#">
+                            <i class="fa fa-external-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="assets/password_generator.png" alt="project2" />
+                    <div class="layer">
+                        <h2>PASSWORD GENERATOR</h2>
+                        <p>
+                            A user-friendly web app providing customizable and secure password generation to enhance your online security.
+                        </p>
+                        <a href="#">
+                            <i class="fa fa-external-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="assets/raysorpay.png" alt="project3" />
+                    <div class="layer">
+                        <h2>RAYZORPAY CLONE</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eum
+                            nostrum, quae consequuntur eos libero ratione.
+                        </p>
+                        <a href="https://rayzorpay-clone.vercel.app/">
+                            <i class="fa fa-external-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="assets/swiftpay.jpeg" alt="project4" />
+                    <div class="layer">
+                        <h2>SWIFTPAY</h2>
+                        <p>
+                            SwiftPay, a dazzling web experience. Crafted with Tailwind CSS and dynamic animations elevate the user
+                            interface.
+                        </p>
+                        <a href="https://swiftpay-landing-page.vercel.app/">
+                            <i class="fa fa-external-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="assets/image_gallery.jpeg" alt="project5" />
+                    <div class="layer">
+                        <h2>IMAGE GALLERY</h2>
+                        <p>
+                            Responsive Image Gallery Website features a dynamic navigation bar and grayscale-to-color image transitions.
+                        </p>
+                        <a href="https://invtfl-yuvraj.github.io/image-gallery/">
+                            <i class="fa fa-external-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="assets/trekventure.jpeg" alt="project6" />
+                    <div class="layer">
+                        <h2>TREKVENTURE</h2>
+                        <p>
+                            TrekVenture, where every adventure comes to life with our captivating Parallax Effect!
+                        </p>
+                        <a href="https://trekventure.vercel.app/">
+                            <i class="fa fa-external-link"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="section-title">
+                <h2 class="sub-title">Contact</h2>
+                <h3 class="title">Get in Touch</h3>
+            </div>
+            <div class="content">
+                <div class="contact-left">
+                    <form action="">
+                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                        <textarea name="message" id="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit">Send Message <i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                </div>
+                <div class="vl"></div>
+                <div class="contact-right">
+                    <div class="col phone">
+                        <i class="fa-solid fa-phone"></i>
+                        <div class="info">
+                            <h2 class="title">Phone</h2>
+                            <p>+91 8115656215</p>
+                        </div>
+                    </div>
+                    <div class="col address">
+                        <i class="fa-solid fa-message"></i>
+                        <div class="info">
+                            <h2 class="title">WhatsApp</h2>
+                            <p>+91 8115656215</p>
+                        </div>
+                    </div>
+                    <div class="col email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div class="info">
+                            <h2 class="title">Email</h2>
+                            <p>yuvrajsingh3715@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="col website">
+                        <i class="fa-solid fa-globe"></i>
+                        <div class="info">
+                            <h2 class="title">Website</h2>
+                            <p>www.domain.com</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="copyright">
+                Copyright © Portfolio | Made with <i class="fa-solid fa-heart"></i> By <a href="#">Yuvraj Singh</a>
+            </div>
+        </section>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
